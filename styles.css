@@ -1,0 +1,116 @@
+body{
+    background: #EFEFEF;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shuffle-container {
+    border-top: 2px solid #6F98A8;
+}
+.right-container {
+    width: 30%;
+}
+.left-container {
+    width: 70%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.align-center{
+    text-align: center;
+}
+.counter.grid-1, .counter.grid-6, .counter.grid-7 {
+    background: #c0c7ca;
+}
+.counter.grid-2, .counter.grid-4, .counter.grid-8 {
+    background: #2B8EAD;
+}
+.counter.grid-3, .counter.grid-5, .counter.grid-9 {
+    background: #6F98A8;
+}
+.counter{
+    width: 33.333%;
+    float: left;
+    color: #ffffff;
+    background: #6F98A8;
+}
+.counter span{
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    height: 100%;
+}
+.button-container{
+    padding: 10px 0;
+}
+.button-container span{
+    display: block;
+    margin-bottom: 10px;
+}
+.shuffle-container button{
+    background: #2B8EAD;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 3px solid #333;
+    width: 100px;
+    cursor: pointer;
+}
+.shuffle-container button:hover{
+    background: #72C3DC;
+}
+.signatur{
+    font-size: 1em;
+    clear: both;
+    text-align: right;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .shuffle-container{
+        border: none;
+    }
+    .float-left, .float-right{
+        float: none;
+    }
+    h3{
+        background: #000;
+        color: #fff;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .right-container, .left-container{
+      width: auto;
+      margin: 0 20px;
+    }
+    div.counter {
+      width: 100%;
+      margin-bottom: 2px;
+      color: #333;
+      background: #BFBFBF;
+      border-left: 5px solid #6F98A8;
+    }
+    div.counter.grid-1, div.counter.grid-6, div.counter.grid-7 {
+        border-left: 5px solid #c0c7ca;
+    }
+    div.counter.grid-2, div.counter.grid-4, div.counter.grid-8 {
+        border-left: 5px solid #2B8EAD;
+    }
+    div.counter.grid-3, div.counter.grid-5, div.counter.grid-9 {
+        border-left: 5px solid #6F98A8;
+    }
+    .button-container span{
+        display: inline;
+        margin-bottom: 0;
+    }
+    .signatur{
+        text-align: center;
+    }
+}
